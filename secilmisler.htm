@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seçilmişlər – Birmarket</title>
+  <link rel="icon" type="image/png" href="img/birmarket-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="headerfooter.css">
+  <link rel="stylesheet" href="secilmisler.css">
+</head>
+
+<body class="wishlist-page">
+
+  <header class="header" id="siteHeader">
+    <div class="header-top">
+      <div class="container header-top-content">
+        <div class="top-nav-left">
+          <a href="#" class="top-link">Çatdırılma və ödəmə</a>
+          <a href="#" class="top-link">Qaytarılma</a>
+          <a href="#" class="top-link">Zəmanət</a>
+          <a href="#" class="top-link-btn">Birmarket-də satın</a>
+        </div>
+
+        <div class="top-nav-right">
+          <div class="top-dropdown" tabindex="0">
+            <svg class="icon icon-phone" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span class="top-text font-bold">915</span>
+            <svg class="icon icon-chevron" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+
+          <div class="top-dropdown" tabindex="0">
+            <span class="flag-icon">
+              <svg width="18" height="12" viewBox="0 0 1200 600">
+                <rect width="1200" height="200" fill="#00b5e2" />
+                <rect y="200" width="1200" height="200" fill="#ef3340" />
+                <rect y="400" width="1200" height="200" fill="#509e2f" />
+                <circle cx="580" cy="300" r="80" fill="#ffffff" />
+                <circle cx="600" cy="300" r="66" fill="#ef3340" />
+                <polygon points="630,285 640,295 655,290 648,305 658,318 642,315 635,328 630,313 615,310 626,298"
+                  fill="#ffffff" />
+              </svg>
+            </span>
+            <span class="top-text font-bold">AZ</span>
+            <svg class="icon icon-chevron" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+
+          <span class="top-nav-divider"></span>
+
+          <a href="#" class="top-link auth-link">
+            <svg class="icon icon-user" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span class="font-medium">Qeydiyyat | Giriş</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-main">
+      <div class="container header-main-content">
+        <a href="index.htm" class="logo">
+          <img src="img/Birmarket_loqo.svg.webp" alt="birmarket logo" class="logo-img">
+        </a>
+
+        <div class="header-location desktop-location">
+          <svg class="icon icon-location" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span class="location-text">Şəhər: <strong>Bakı</strong></span>
+        </div>
+
+        <button type="button" class="catalog-btn desktop-catalog" id="desktopCatalogBtn">
+          <span>Məhsul kataloqu</span>
+          <svg class="icon icon-chevron-btn" viewBox="0 0 24 24" width="16" height="16" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+
+        <div class="header-search">
+          <input type="text" class="search-input" placeholder="Məhsul axtar">
+          <button type="button" class="search-btn">Axtar</button>
+        </div>
+
+        <div class="header-actions">
+          <a href="secilmisler.htm" class="action-btn wishlist-btn active" title="Seçilmişlər">
+            <svg class="icon icon-heart" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+              stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
+            </svg>
+            <span class="action-label">Seçilmişlər</span>
+          </a>
+
+          <a href="sebet.htm" class="action-btn cart-btn" title="Səbət">
+            <svg class="icon icon-cart" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+              stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="action-label">Səbət</span>
+          </a>
+
+          <button type="button" class="burger-btn" id="burgerBtn">
+            <svg class="icon-burger" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg class="icon-close" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-sub-bar" id="mobileSubBar">
+      <div class="container">
+        <div class="header-location mobile-location">
+          <svg class="icon icon-location" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span class="location-text">Şəhər: <strong>Bakı</strong></span>
+        </div>
+
+        <button type="button" class="catalog-btn mobile-catalog" id="mobileCatalogBtn">
+          <span>Məhsul kataloqu</span>
+          <svg class="icon icon-chevron-btn" viewBox="0 0 24 24" width="16" height="16" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+      <div class="container mobile-menu-content">
+        <div class="mobile-menu-item">
+          <a href="tel:915" class="mobile-menu-row">
+            <div class="mobile-menu-left">
+              <svg class="icon icon-phone" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <span class="mobile-item-title font-bold">915</span>
+            </div>
+            <svg class="icon icon-chevron" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="mobile-menu-item">
+          <div class="mobile-menu-row">
+            <div class="mobile-menu-left">
+              <span class="flag-icon">
+                <svg width="20" height="14" viewBox="0 0 1200 600">
+                  <rect width="1200" height="200" fill="#00b5e2" />
+                  <rect y="200" width="1200" height="200" fill="#ef3340" />
+                  <rect y="400" width="1200" height="200" fill="#509e2f" />
+                  <circle cx="580" cy="300" r="80" fill="#ffffff" />
+                  <circle cx="600" cy="300" r="66" fill="#ef3340" />
+                  <polygon points="630,285 640,295 655,290 648,305 658,318 642,315 635,328 630,313 615,310 626,298"
+                    fill="#ffffff" />
+                </svg>
+              </span>
+              <span class="mobile-item-title font-bold">AZ</span>
+            </div>
+            <svg class="icon icon-chevron" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+
+        <div class="mobile-menu-item">
+          <a href="#" class="mobile-menu-row">
+            <div class="mobile-menu-left">
+              <svg class="icon icon-user" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span class="mobile-item-title font-bold">Qeydiyyat | Giriş</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link font-bold">Çatdırılma və ödəmə</a>
+        </div>
+
+        <div class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link font-bold">Qaytarılma</a>
+        </div>
+
+        <div class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link font-bold">Zəmanət</a>
+        </div>
+
+        <div class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link font-bold">Birmarket-də satın</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wishlist-main">
+    <div class="container wishlist-container">
+      <div class="wishlist-header">
+        <h1 class="wishlist-title">Seçilmişlər</h1>
+      </div>
+
+      <div class="wishlist-empty-state" id="wishlistEmptyState">
+        <div class="wishlist-empty-icon-wrap">
+          <svg class="wishlist-empty-icon" viewBox="0 0 24 24">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+            </path>
+          </svg>
+        </div>
+        <p class="wishlist-empty-text">Seçilmişlərdə hec bir məhsul yoxdur</p>
+      </div>
+
+      <div class="wishlist-products-grid" id="wishlistProductsGrid" style="display: none;"></div>
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="headerfooter.js"></script>
+  <script src="secilmisler.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+.app-promo-section {
+  background-color: #ef4a97;
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0 32px 0;
+}
+
+.app-promo-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  min-height: 410px;
+  padding-top: 40px;
+}
+
+.app-promo-left {
+  max-width: 580px;
+  padding-bottom: 40px;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.app-promo-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.app-promo-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.app-promo-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.app-promo-feature strong {
+  font-weight: 700;
+}
+
+.app-promo-feature .feature-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.app-promo-feature .feature-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: #ffffff;
+}
+
+.app-promo-feature .feature-icon-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.app-promo-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #ef4a97;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 13px 26px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-bottom: 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.app-promo-download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  background-color: #fffafc;
+}
+
+.app-promo-badges {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.app-badge-link {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.app-badge-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.app-badge-img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.app-promo-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  margin-right: 50px;
+}
+
+.app-promo-phone-img {
+  width: 360px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.22));
+  transform: translateY(12px);
+}
+
+@media (max-width: 1024px) {
+  .app-promo-title {
+    font-size: 28px;
+  }
+
+  .app-promo-right {
+    margin-right: 15px;
+  }
+
+  .app-promo-phone-img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-promo-section {
+    margin: 14px 0 24px 0;
+  }
+
+  .app-promo-container {
+    padding-top: 24px;
+    min-height: auto;
+    overflow: hidden;
+  }
+
+  .app-promo-left {
+    max-width: calc(100% - 165px);
+    padding-bottom: 24px;
+  }
+
+  .app-promo-title {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .app-promo-features {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .app-promo-feature {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .app-promo-feature .feature-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .app-promo-feature .feature-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .app-promo-feature .feature-icon-text {
+    font-size: 15px;
+  }
+
+  .app-promo-download-btn {
+    font-size: 12.5px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    width: fit-content;
+  }
+
+  .app-promo-badges {
+    gap: 6px;
+  }
+
+  .app-badge-img {
+    height: 24px;
+  }
+
+  .app-promo-right {
+    position: absolute;
+    right: 16px;
+    bottom: -4px;
+    margin-right: 0;
+  }
+
+  .app-promo-phone-img {
+    width: 150px;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .app-promo-left {
+    max-width: calc(100% - 135px);
+    padding-bottom: 20px;
+  }
+
+  .app-promo-title {
+    font-size: 19px;
+  }
+
+  .app-promo-feature {
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .app-promo-download-btn {
+    font-size: 10.5px;
+    padding: 8px 12px;
+  }
+
+  .app-badge-img {
+    height: 20px;
+  }
+
+  .app-promo-right {
+    right: 12px;
+    bottom: -4px;
+  }
+
+  .app-promo-phone-img {
+    width: 125px;
+  }
+}

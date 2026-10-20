@@ -1,0 +1,159 @@
+.actual-section {
+  padding: 28px 0 36px 0;
+  background-color: #ffffff;
+}
+
+.actual-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.actual-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #172033;
+  margin: 0;
+}
+
+.actual-title-logo {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+
+.actual-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.actual-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 12px 6px;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  min-width: 0;
+}
+
+.actual-card:hover {
+  transform: translateY(-3px);
+}
+
+.actual-card:hover .actual-card-img {
+  transform: scale(1.05);
+}
+
+.actual-card-img-wrap {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.actual-card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.actual-card-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #172033;
+  text-align: center;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 35px;
+}
+
+.actual-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.actual-more-btn {
+  background-color: #ffffff;
+  color: #ea207e;
+  border: 1px solid #ea207e;
+  border-radius: 4px;
+  padding: 10px 0;
+  width: 100%;
+  max-width: 320px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.actual-more-btn:hover {
+  background-color: #fdf2f8;
+}
+
+@media (max-width: 1024px) {
+  .actual-grid {
+    gap: 14px;
+  }
+
+  .actual-card-img-wrap {
+    height: 90px;
+  }
+
+  .actual-card-title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .actual-section {
+    padding: 18px 0 26px 0;
+  }
+
+  .actual-header {
+    margin-bottom: 16px;
+  }
+
+  .actual-title {
+    font-size: 18px;
+  }
+
+  .actual-title-logo {
+    height: 20px;
+  }
+
+  .actual-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 10px;
+  }
+
+  .actual-card {
+    padding: 8px 4px;
+  }
+
+  .actual-card-img-wrap {
+    height: 80px;
+    margin-bottom: 8px;
+  }
+
+  .actual-card-title {
+    font-size: 11.5px;
+    height: 32px;
+  }
+
+  .actual-more-btn {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,542 @@
+/* Details Page Styles */
+
+:root {
+    --primary-pink: #ea207e;
+    --primary-pink-hover: #d4176f;
+    --brand-yellow: #ffd643;
+    --text-dark: #19191d;
+    --text-gray: #6e7487;
+    --text-light-gray: #9ba1b0;
+    --border-color: #ebecef;
+    --card-bg: #ffffff;
+    --page-bg: #ffffff;
+}
+
+body.details-page {
+    background-color: var(--page-bg);
+    color: var(--text-dark);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.details-main {
+    padding: 24px 0 60px 0;
+    background-color: #fff;
+}
+
+.details-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 460px 1fr 340px;
+    gap: 32px;
+    align-items: start;
+}
+
+/* Sol: Şəkil Qutusu */
+.details-media-box {
+    width: 100%;
+}
+
+.details-main-img-wrap {
+    width: 100%;
+    height: 440px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.details-main-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.details-main-img:hover {
+    transform: scale(1.03);
+}
+
+/* Mərkəz: Məhsul Başlığı və Təfərrüatları */
+.details-info-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--text-dark);
+    margin: 0 0 14px 0;
+}
+
+.details-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.details-rating-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.details-stars {
+    color: #ff9800;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.details-stars.no-rating {
+    color: #d1d5db;
+}
+
+.details-rating-val {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.details-review-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    color: var(--text-gray);
+    cursor: pointer;
+}
+
+.details-review-badge svg {
+    color: var(--text-gray);
+}
+
+.details-sku-row {
+    font-size: 13px;
+    color: var(--text-gray);
+    margin-bottom: 14px;
+}
+
+.details-sku-row span {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.details-wishlist-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    padding: 6px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: color 0.2s ease;
+    width: fit-content;
+    margin-bottom: 24px;
+}
+
+.details-wishlist-toggle:hover {
+    color: var(--primary-pink);
+}
+
+.details-wishlist-toggle .heart-icon {
+    stroke: var(--primary-pink);
+    transition: all 0.2s ease;
+}
+
+.details-wishlist-toggle.active {
+    color: var(--primary-pink);
+    font-weight: 600;
+}
+
+.details-wishlist-toggle.active .heart-icon {
+    fill: var(--primary-pink);
+    stroke: var(--primary-pink);
+}
+
+/* Xüsusiyyətlər Bölməsi */
+.details-specs-block {
+    margin-top: 10px;
+    border-top: 1px solid #f0f2f5;
+    padding-top: 20px;
+}
+
+.specs-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 16px 0;
+}
+
+.specs-table {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.specs-row {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.specs-label {
+    color: var(--text-gray);
+}
+
+.specs-value {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.specs-value.highlight-brand {
+    color: var(--primary-pink);
+    font-weight: 600;
+}
+
+.specs-detail-link {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary-pink);
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.specs-detail-link:hover {
+    text-decoration: underline;
+}
+
+/* Sağ: Satınalma / Qiymət Kartı */
+.details-action-box {
+    width: 100%;
+}
+
+.action-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.campaign-timer-bar {
+    background: linear-gradient(90deg, #f02275, #ff2a7a);
+    color: #ffffff;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0.2px;
+}
+
+.campaign-timer-bar span {
+    font-weight: 700;
+}
+
+.action-card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-header-row {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.price-main-group {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.price-current {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: -0.5px;
+}
+
+.price-current.has-discount {
+    color: var(--primary-pink);
+}
+
+.price-currency {
+    font-size: 26px;
+    font-weight: 700;
+    color: inherit;
+}
+
+.price-old-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.price-old {
+    font-size: 16px;
+    color: var(--text-light-gray);
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.price-discount-badge {
+    background-color: var(--primary-pink);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 6px;
+    border-radius: 4px;
+    line-height: 1;
+}
+
+/* Sarı Taksit Qutusu */
+.installment-yellow-box {
+    background-color: var(--brand-yellow);
+    color: var(--text-dark);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px 9px;
+    border-radius: 4px;
+    display: inline-block;
+    width: fit-content;
+    margin-top: 12px;
+}
+
+/* Kredit Kalkulyatoru */
+.credit-calc-section {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid #f0f2f5;
+}
+
+.credit-calc-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.credit-calc-icon {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.credit-calc-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2238;
+}
+
+.credit-months-selector {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+.credit-month-btn {
+    background: #ffffff;
+    border: 1px solid #dfe3ea;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.credit-month-btn:hover {
+    border-color: #b8bec9;
+    background-color: #fafbfc;
+}
+
+.credit-month-btn.active {
+    background-color: var(--brand-yellow);
+    border-color: var(--brand-yellow);
+    color: var(--text-dark);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Səbətə Əlavə Et Düyməsi */
+.details-add-cart-btn {
+    margin-top: 24px;
+    width: 100%;
+    background-color: var(--primary-pink);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(234, 32, 126, 0.28);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.details-add-cart-btn:hover {
+    background-color: var(--primary-pink-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(234, 32, 126, 0.35);
+}
+
+.details-add-cart-btn:active {
+    transform: translateY(1px);
+}
+
+.details-add-cart-btn.in-cart {
+    background-color: #2e7d32;
+    box-shadow: 0 4px 14px rgba(46, 125, 50, 0.25);
+}
+
+.details-add-cart-btn.in-cart:hover {
+    background-color: #276a2b;
+}
+
+/* Toast Bildirişi */
+.details-toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 14px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.details-toast.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.details-toast svg {
+    color: #4ade80;
+}
+
+/* ========================================================
+   RESPONSIVE DESIGN (Planşet və Mobil)
+   ======================================================== */
+
+@media (max-width: 1024px) {
+    .details-grid {
+        grid-template-columns: 380px 1fr;
+        gap: 24px;
+    }
+
+    .details-action-box {
+        grid-column: 1 / -1;
+        max-width: 500px;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .details-main {
+        padding: 12px 0 40px 0;
+    }
+
+    .details-container {
+        padding: 0 16px;
+    }
+
+    .details-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* Mobil ardıcıllıq şəkillərdəki kimidir:
+     1. Şəkil
+     2. Başlıq və reytinq/sku/ürək
+     3. Qiymət və satınalma kartı
+     4. Məhsul haqqında məlumat
+  */
+    .details-media-box {
+        order: 1;
+    }
+
+    .details-main-img-wrap {
+        height: 300px;
+    }
+
+    .details-info-box {
+        order: 2;
+    }
+
+    .details-title {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    .details-specs-block {
+        order: 4;
+        margin-top: 20px;
+    }
+
+    .details-action-box {
+        order: 3;
+        max-width: 100%;
+        margin-top: 8px;
+    }
+
+    .action-card {
+        border-radius: 10px;
+    }
+
+    .price-current {
+        font-size: 28px;
+    }
+
+    .price-currency {
+        font-size: 24px;
+    }
+
+    .details-add-cart-btn {
+        padding: 14px;
+        font-size: 15px;
+    }
+}
